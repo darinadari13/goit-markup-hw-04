@@ -1,0 +1,139 @@
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--main-color);
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+:root {
+  --main-color: #212121;
+  --second-color: #2196f3;
+  --background-color: #2f303a;
+}
+
+.logo {
+  color: var(--second-color);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 0.9;
+  text-decoration: none;
+}
+
+.header-logo > span {
+  color: var(--main-color);
+}
+
+.link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  color: var(--main-color);
+  text-decoration: none;
+}
+.link:hover,
+.link:focus {
+  color: var(--second-color);
+}
+
+.phone-link {
+  color: #757575;
+}
+
+.slogan {
+  background-color: var(--background-color);
+}
+
+.slogan-title {
+  font-weight: 900px;
+  font-size: 44px;
+  line-height: 1.4;
+  color: #ffffff;
+  text-align: center;
+}
+
+.slogan-button {
+  font-weight: 700px;
+  font-size: 16px;
+  line-height: 1.9;
+  background-color: var(--second-color);
+  color: #ffffff;
+}
+
+.filter-button {
+  font-weight: 500px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--main-color);
+  background-color: #f5f4fa;
+}
+.filter-button:hover,
+.filter-button:focus {
+  color: #ffffff;
+  background-color: var(--second-color);
+}
+
+.subtitle {
+  font-weight: 700px;
+  font-size: 14px;
+  line-height: 1;
+  color: var(--main-color);
+}
+
+.subtitle-paragraph {
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #757575;
+}
+
+.title {
+  text-align: center;
+  font-weight: 700px;
+  font-size: 36px;
+  line-height: 1.2;
+  color: var(--main-color);
+}
+
+.footer {
+  background-color: var(--background-color);
+}
+
+.footer-logo > span {
+  color: #ffffff;
+}
+
+.footer-adress {
+  font-style: normal;
+}
+
+.footer-link-adress {
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-link {
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+.footer-link-adress:hover,
+.footer-link-adress:focus {
+  color: var(--second-color);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--second-color);
+}
