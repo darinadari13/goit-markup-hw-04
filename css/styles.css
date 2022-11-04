@@ -1,6 +1,17 @@
+:root {
+  --main-color: #212121;
+  --second-color: #2196f3;
+  --background-color: #2f303a;
+  --second-background-color: #f5f4fa;
+  --white-color: #ffffff;
+  --light-grey: #757575;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
+}
+
 body {
   font-family: Roboto, sans-serif;
   color: var(--main-color);
+  background-color: var(--white-color);
 }
 
 ul {
@@ -9,12 +20,6 @@ ul {
 
 button {
   cursor: pointer;
-}
-
-:root {
-  --main-color: #212121;
-  --second-color: #2196f3;
-  --background-color: #2f303a;
 }
 
 .logo {
@@ -26,7 +31,7 @@ button {
   text-decoration: none;
 }
 
-.header-logo > span {
+.studio-logo {
   color: var(--main-color);
 }
 
@@ -41,72 +46,108 @@ button {
 .link:focus {
   color: var(--second-color);
 }
-
-.phone-link {
-  color: #757575;
+.active {
+  color: var(--second-color);
 }
 
-.slogan {
+.phone-link {
+  color: var(--light-grey);
+}
+
+.mail-link {
+  color: var(--light-grey);
+}
+
+.hero {
   background-color: var(--background-color);
 }
 
-.slogan-title {
-  font-weight: 900px;
+.hero-title {
+  font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  color: #ffffff;
+  color: var(--white-color);
   text-align: center;
+  text-transform: uppercase;
 }
 
-.slogan-button {
-  font-weight: 700px;
+.hero-button {
+  font-family: Roboto;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   background-color: var(--second-color);
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .filter-button {
-  font-weight: 500px;
+  font-family: Roboto;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   color: var(--main-color);
-  background-color: #f5f4fa;
+  background-color: var(--second-background-color);
 }
 .filter-button:hover,
 .filter-button:focus {
-  color: #ffffff;
+  color: var(--white-color);
   background-color: var(--second-color);
 }
 
-.subtitle {
-  font-weight: 700px;
+.team-name {
+  font-weight: 700;
   font-size: 14px;
   line-height: 1;
   color: var(--main-color);
 }
 
-.subtitle-paragraph {
-  font-weight: 400px;
+.team-profession {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  color: #757575;
+  color: var(--light-grey);
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+
+.subtitle-projects {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--main-color);
+}
+
+.subtitle-paragraph {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--light-grey);
 }
 
 .title {
   text-align: center;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   color: var(--main-color);
+}
+
+.our-team {
+  background-color: var(--second-background-color);
 }
 
 .footer {
   background-color: var(--background-color);
 }
 
-.footer-logo > span {
-  color: #ffffff;
+.studio-logo-footer {
+  color: var(--white-color);
 }
 
 .footer-adress {
@@ -114,18 +155,18 @@ button {
 }
 
 .footer-link-adress {
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  color: #ffffff;
+  color: var(--white-color);
   text-decoration: none;
 }
 
 .footer-link {
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-link-color);
   text-decoration: none;
 }
 .footer-link-adress:hover,
