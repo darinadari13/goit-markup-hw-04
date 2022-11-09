@@ -8,10 +8,22 @@
   --footer-link-color: rgba(255, 255, 255, 0.6);
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.section {
+  display: block;
+}
+
 body {
   font-family: Roboto, sans-serif;
   color: var(--main-color);
   background-color: var(--white-color);
+  margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -22,6 +34,58 @@ button {
   cursor: pointer;
 }
 
+.unvisible-title {
+  display: none;
+}
+
+.header {
+  background-color: var(--white-color);
+  border-bottom: 1px solid #ececec;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-items {
+  display: flex;
+  margin-left: 93px;
+  justify-content: center;
+}
+
+.header-nav-items .item {
+  margin-right: 50px;
+}
+
+.header-nav-items .item:last-child {
+  margin-right: 0px;
+}
+
+.header-nav-items .link {
+  display: block;
+}
+
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-contacts .item:last-child {
+  margin-left: 50px;
+}
 .logo {
   color: var(--second-color);
   font-family: Raleway;
@@ -29,6 +93,8 @@ button {
   font-size: 26px;
   line-height: 0.9;
   text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .studio-logo {
@@ -60,24 +126,56 @@ button {
 
 .hero {
   background-color: var(--background-color);
+  margin-bottom: 94px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
 }
 
 .hero-title {
   font-weight: 900;
   font-size: 44px;
+  font-style: normal;
+  text-align: center;
   line-height: 1.4;
   color: var(--white-color);
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .hero-button {
-  font-family: Roboto;
+  display: inline-block;
+  color: var(--white-color);
+  background-color: var(--second-color);
+  letter-spacing: 0.06em;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.9;
-  background-color: var(--second-color);
-  color: var(--white-color);
+  line-height: 1.88;
+  min-width: 216px;
+  cursor: pointer;
+  margin-top: 30px;
+  padding: 10px 32px;
+  border: 0 solid transparent;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+}
+
+.benfits-section {
+  padding-bottom: 94px;
+}
+
+.benefits-list {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
+.technology-list {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+  padding-bottom: 94px;
 }
 
 .filter-button {
@@ -92,6 +190,22 @@ button {
 .filter-button:focus {
   color: var(--white-color);
   background-color: var(--second-color);
+}
+.team-title {
+  padding-top: 94px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  color: var(--main-color);
+}
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+  padding-bottom: 94px;
+  margin: 0;
 }
 
 .team-name {
@@ -136,6 +250,7 @@ button {
   font-size: 36px;
   line-height: 1.2;
   color: var(--main-color);
+  padding-bottom: 50px;
 }
 
 .our-team {
@@ -144,6 +259,8 @@ button {
 
 .footer {
   background-color: var(--background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .studio-logo-footer {
@@ -152,6 +269,14 @@ button {
 
 .footer-adress {
   font-style: normal;
+}
+
+.footer-adress-list {
+  padding: 0;
+}
+
+.footer-item:not(:last-child) {
+  padding-bottom: 9px;
 }
 
 .footer-link-adress {
@@ -177,4 +302,48 @@ button {
 .footer-link:hover,
 .footer-link:focus {
   color: var(--second-color);
+}
+.filter {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 46px;
+}
+
+.filter-list-item:not(:last-child) {
+  padding-right: 8px;
+}
+
+.filter-button {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+  border-radius: 4px;
+  border: 1px;
+  background-color: var(--second-background-color);
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  padding: 0px;
+}
+
+.projects-list {
+  width: 370px;
+  border: 1px solid #eeeeee;
+}
+
+.projects-text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
