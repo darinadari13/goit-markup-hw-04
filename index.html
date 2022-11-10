@@ -16,6 +16,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Студія</title>
   </head>
@@ -46,14 +50,17 @@
 
     <main>
       <!-- Замовити послугу за допомогою кнопки -->
-      <div class="hero">
-        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="hero-button" type="button">Замовити послугу</button>
-      </div>
+      <section class="hero">
+        <div class="container container-hero">
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <button class="hero-button" type="button">Замовити послугу</button>
+        </div>
+        </div>
+      </section>
       <!-- Наша перевага -->
       <section class="benfits-section">
-        <h2 class="unvisible-title">Наша перевага</h2>
         <div class="container">
+        <h2 class="unvisible-title">Наша перевага</h2>
           <ul class="benefits-list">
             <li>
               <h3 class="subtitle">Увага до деталій</h3>
@@ -81,9 +88,10 @@
             </li>
           </ul>
         </div>
+        </div>
       </section>
       <!-- Чим ми займаємося -->
-      <section>
+      <section class="what-we-do">
         <div class="container">
           <h2 class="title">Чим ми займаємося</h2>
           <ul class="technology-list">
@@ -110,25 +118,33 @@
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list">
-            <li>
+            <li class="team-list-list">
               <img src="./images/imgt1sq.jpeg" alt="Ігор Дем'яненко" width="270" />
+              <div class="team-person">
               <h3 class="team-name">Ігор Дем'яненко</h3>
               <p class="team-profession" lang="en">Product Designer</p>
+              </div>
             </li>
-            <li>
+            <li class="team-list-list">
               <img src="./images/imgt2sq.jpeg" alt="Ольга Рєпіна" width="270" />
+              <div class="team-person">
               <h3 class="team-name">Ольга Рєпіна</h3>
               <p class="team-profession" lang="en">Frontend Developer</p>
+              </div>
             </li>
-            <li>
+            <li class="team-list-list">
               <img src="./images/imgt3sq.jpeg" alt="Микола Тарасов" width="270" />
+               <div class="team-person">
               <h3 class="team-name">Микола Тарасов</h3>
               <p class="team-profession" lang="en">Marketing</p>
+              </div>
             </li>
-            <li>
+            <li class="team-list-list">
               <img src="./images/imgt4sq.jpeg" alt="Михайло Єрмаков" width="270" />
+              <div class="team-person">
               <h3 class="team-name">Михайло Єрмаков</h3>
               <p class="team-profession" lang="en">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>

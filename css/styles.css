@@ -18,6 +18,13 @@
   display: block;
 }
 
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
 body {
   font-family: Roboto, sans-serif;
   color: var(--main-color);
@@ -32,6 +39,12 @@ ul {
 
 button {
   cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .unvisible-title {
@@ -62,7 +75,6 @@ button {
 
 .header-nav-items {
   display: flex;
-  margin-left: 93px;
   justify-content: center;
 }
 
@@ -126,7 +138,6 @@ button {
 
 .hero {
   background-color: var(--background-color);
-  margin-bottom: 94px;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -136,12 +147,16 @@ button {
   font-weight: 900;
   font-size: 44px;
   font-style: normal;
-  text-align: center;
   line-height: 1.4;
   color: var(--white-color);
   text-align: center;
   text-transform: uppercase;
   margin: 0;
+}
+
+.container-hero {
+  width: 696px;
+  margin: auto;
 }
 
 .hero-button {
@@ -162,19 +177,17 @@ button {
 }
 
 .benfits-section {
-  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .benefits-list {
   display: flex;
-  justify-content: space-between;
-  column-gap: 30px;
+  gap: 30px;
 }
 
 .technology-list {
   display: flex;
-  justify-content: space-between;
-  column-gap: 30px;
+  gap: 30px;
   padding-bottom: 94px;
 }
 
@@ -192,8 +205,7 @@ button {
   background-color: var(--second-color);
 }
 .team-title {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -208,11 +220,26 @@ button {
   margin: 0;
 }
 
+.team-list-list {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .team-name {
   font-weight: 700;
   font-size: 14px;
   line-height: 1;
   color: var(--main-color);
+  margin-bottom: 10px;
+}
+
+.team-person {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .team-profession {
@@ -235,6 +262,7 @@ button {
   font-size: 18px;
   line-height: 2;
   color: var(--main-color);
+  margin-bottom: 4px;
 }
 
 .subtitle-paragraph {
@@ -242,6 +270,10 @@ button {
   font-size: 14px;
   line-height: 1.7;
   color: var(--light-grey);
+}
+
+.what-we-do {
+  padding-top: 94px;
 }
 
 .title {
@@ -255,6 +287,7 @@ button {
 
 .our-team {
   background-color: var(--second-background-color);
+  padding-top: 94px;
 }
 
 .footer {
@@ -263,8 +296,15 @@ button {
   padding-bottom: 60px;
 }
 
+.footer-logo {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .studio-logo-footer {
   color: var(--white-color);
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .footer-adress {
@@ -276,7 +316,7 @@ button {
 }
 
 .footer-item:not(:last-child) {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .footer-link-adress {
@@ -305,13 +345,13 @@ button {
 }
 .filter {
   margin-top: 94px;
-  margin-bottom: 94px;
+  margin-bottom: 50px;
 }
 
 .filter-list {
   display: flex;
   justify-content: center;
-  padding-bottom: 46px;
+  margin-bottom: 46px;
 }
 
 .filter-list-item:not(:last-child) {
@@ -332,13 +372,11 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-
   padding: 0px;
 }
 
 .projects-list {
   width: 370px;
-  border: 1px solid #eeeeee;
 }
 
 .projects-text {
@@ -346,4 +384,7 @@ button {
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
