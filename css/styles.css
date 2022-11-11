@@ -24,6 +24,10 @@ h2,
 h3 {
   margin: 0;
 }
+ul {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: Roboto, sans-serif;
@@ -66,6 +70,10 @@ img {
 .main-nav {
   display: flex;
   align-items: center;
+}
+
+.header-logo {
+  margin-right: 93px;
 }
 
 .header-nav {
@@ -151,12 +159,8 @@ img {
   color: var(--white-color);
   text-align: center;
   text-transform: uppercase;
-  margin: 0;
-}
-
-.container-hero {
+  margin: 0 auto;
   width: 696px;
-  margin: auto;
 }
 
 .hero-button {
@@ -188,7 +192,6 @@ img {
 .technology-list {
   display: flex;
   gap: 30px;
-  padding-bottom: 94px;
 }
 
 .filter-button {
@@ -240,6 +243,7 @@ img {
   padding-bottom: 30px;
   padding-left: 10px;
   padding-right: 10px;
+  text-align: center;
 }
 
 .team-profession {
@@ -255,6 +259,7 @@ img {
   line-height: 2;
   color: var(--main-color);
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .subtitle-projects {
@@ -273,7 +278,7 @@ img {
 }
 
 .what-we-do {
-  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .title {
@@ -282,7 +287,7 @@ img {
   font-size: 36px;
   line-height: 1.2;
   color: var(--main-color);
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .our-team {
@@ -309,6 +314,7 @@ img {
 
 .footer-adress {
   font-style: normal;
+  margin-top: 20px;
 }
 
 .footer-adress-list {
@@ -344,14 +350,14 @@ img {
   color: var(--second-color);
 }
 .filter {
-  margin-top: 94px;
-  margin-bottom: 50px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .filter-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 46px;
+  margin-bottom: 50px;
 }
 
 .filter-list-item:not(:last-child) {
