@@ -207,10 +207,11 @@ a:focus {
 .benefits-icon {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding-top: 25px;
   padding-bottom: 25px;
-  padding-left: 100px;
-  padding-right: 100px;
+  /* padding-left: 100px;
+  padding-right: 100px; */
   margin-bottom: 30px;
   background: var(--second-background-color);
   border-radius: 4px;
@@ -311,9 +312,12 @@ a:focus {
 }
 
 .team-social-icon {
-  display: inline-block;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
-  padding: 12px;
+
   width: 44px;
   height: 44px;
 }
@@ -495,14 +499,14 @@ a:focus {
 }
 
 .footer-social-icon {
-  display: inline-block;
+  display: flex;
   border-radius: 50%;
-  padding: 12px;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.1);
 }
-
 .footer-social-icon:hover {
   background-color: var(--second-color);
 }
@@ -558,8 +562,17 @@ a:focus {
   width: 370px;
 }
 
-.projects-list:hover {
-  border: 1px solid #eeeeee;
+.project-list-link {
+  display: block;
+  text-decoration: none;
+}
+
+.project-list-link:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project-list-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
